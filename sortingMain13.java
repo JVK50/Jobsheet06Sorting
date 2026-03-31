@@ -22,7 +22,16 @@ public class sortingMain13 {
         dataurut2.selectionSort();
         System.out.println("Data setelah diurutkan dengan selection sort(ASC)");
         dataurut2.tampilData();
+        System.out.println("==============================");
 
-        
+        int c[] = {40, 10, 4, 9, 3};
+
+        sorting13 dataurut3 = new sorting13(c, c.length);
+
+        System.out.println("Data awal 3");
+        dataurut3.tampilData();
+        dataurut3.insertionSort();
+        System.out.println("Data setelah diurutkan dengan insertion sort(ASC)");
+        dataurut3.tampilData();
     }
 }

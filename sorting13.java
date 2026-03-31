@@ -40,6 +40,18 @@ public class sorting13 {
         }
     }
 
+    void insertionSort() {
+        for (int i = 1; i < jmlData; i++) {
+            int temp = data[i];
+            int j = i - 1;
+            while (j >= 0 && data[j] > temp) {
+                data[j + 1] = data[j];
+                j--;
+            }
+            data[j + 1] = temp;
+        }
+    }
+
     void tampilData() {
         for (int i = 0; i < jmlData; i++) {
             System.out.print(data[i] + " ");
