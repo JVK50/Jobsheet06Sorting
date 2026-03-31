@@ -26,6 +26,20 @@ public class sorting13 {
         }
     }
 
+    void selectionSort() {
+        for (int i = 0; i < jmlData-1; i++) {
+            int min = i;
+            for (int j = i+1; j < jmlData; j++) {
+                if (data[j] < data[min]) {
+                    min = j;
+                }
+            }
+            int temp = data[i];
+            data[i] = data[min];
+            data[min] = temp;
+        }
+    }
+
     void tampilData() {
         for (int i = 0; i < jmlData; i++) {
             System.out.print(data[i] + " ");
