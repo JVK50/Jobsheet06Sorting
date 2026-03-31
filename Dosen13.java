@@ -1,0 +1,24 @@
+package Praktikum5;
+
+public class Dosen13 {
+    String kode;
+    String nama;
+    Boolean jenisKelamin;
+    int usia;
+
+    // Konstruktor berparameter
+    Dosen13(String kd, String name, Boolean jk, int age) {
+        kode = kd;
+        nama = name;
+        jenisKelamin = jk;
+        usia = age;
+    }
+
+    void tampil() {
+        String jk = jenisKelamin ? "Laki-laki" : "Perempuan";
+        System.out.println("Kode : " + kode);
+        System.out.println("Nama : " + nama);
+        System.out.println("Jenis Kelamin : " + jk);
+        System.out.println("Usia : " + usia);
+    }
+}
